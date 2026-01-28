@@ -1,0 +1,48 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/resources/*.jar
+!**/src/test/resources/*.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/resources/*.jar
+!**/src/test/resources/*.jar
+
+### VS Code ###
+.vscode/
+
+### Operating System ###
+desktop.ini
+Thumbs.db
+.DS_Store
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.venv
+env/
+env.bak/
+venv.bak/
