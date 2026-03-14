@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000") // Allow Next.js frontend
+@CrossOrigin(origins = "${cors.allowed.origins}") // Uses env variable or localhost:3000
 public class ImageController {
 
     private final ImageService imageService;

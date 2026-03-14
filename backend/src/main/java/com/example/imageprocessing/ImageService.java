@@ -18,8 +18,13 @@ public class ImageService {
             Files.write(inputPath, imageBytes);
 
             // 2. Call Python script
+            String pythonCommand = System.getenv("PYTHON_COMMAND");
+            if (pythonCommand == null || pythonCommand.trim().isEmpty()) {
+                pythonCommand = "python";
+            }
+
             ProcessBuilder processBuilder = new ProcessBuilder(
-                    "python",
+                    pythonCommand,
                     "process_image.py",
                     inputPath.toString(),
                     outputPath.toString());
